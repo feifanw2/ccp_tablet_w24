@@ -1,0 +1,281 @@
+body {
+     font-size: 16px;
+     font-family:'Helvetica Neue',Arial, sans-serif;
+     color: black;
+     background-color:#f9f4ee;
+
+}
+
+
+#video-container {
+    display:block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #video-container {
+        display:none;
+    }
+}
+
+
+h1 {
+    font-size: 5em;
+    margin-top: 20px;
+    text-align:right;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    font-size: 2em;
+    color:#e45432;
+    font-weight: bold;
+}
+h3 {
+    font-size: 1.5em;
+    color: #e45432;
+    font-weight: bold;
+}
+
+
+
+
+#bold_0 {
+    font-weight: bold;
+}
+
+#bold_1 {
+    font-weight: bold;
+}
+
+#bold_2 {
+    font-weight: bold;
+}
+#bold_3 {
+    font-weight: bold;
+}
+
+nav {
+    display:block;
+    color:#000000;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size:1em;
+    font-style:italic;
+}
+
+.skip {
+    position:absolute;
+    top:-40px;
+}
+
+.skip:focus {
+    top: 25px;
+}
+
+nav a.active {
+            color:#e45432;
+            font-weight: bold; 
+            font-style:normal;
+            border: 2px solid #e45432;
+            padding:2px 10px;
+            border-radius: 60px;
+            display:inline;
+}
+
+nav li {
+        display: inline-block;
+        margin-right: 50px;
+}
+header {
+        text-align: center;
+        margin-top: 20px;
+}
+
+div.intro {
+           margin-left:20px;
+           margin-right:20px;
+           margin-top:50px;
+}
+div.intro p {
+            text-align: right;
+}
+
+/* below is the grid style for pets page */
+div.grid-container_1 {
+    margin-left:20px;
+}
+.grid-container_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+    padding:10px;
+    gap: 30px 50px;
+}
+.grid-container_1 > div {
+    text-align: center;
+    padding: 20px 0;
+}
+
+div.grid-container {
+                    margin-left:20px;
+                    margin-top: 80px;
+}
+
+.grid-container {
+                 display: grid;
+                 grid-template-columns: 1fr 1fr 1fr;
+                 gap:10px;
+                 padding:10px;
+                 gap: 30px 50px;
+}
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.grid-item1 h2 {
+                 text-align: left;
+}
+.grid-item2 {
+              grid-column: 2/4;
+              background-color: #ebc8ba;
+}
+.grid-item3 {
+             grid-column: 1/3;
+             background-color: #ebc8ba
+}
+.grid-item3 p {
+              text-align: left;
+              margin: 10px 40px 10px 40px;
+}
+.grid-item4 {
+             align-self: end;
+}
+.grid-item5, .grid-item6, .grid-item7 {
+              background-color: #ebc8ba;
+}
+.grid-item8 {
+             grid-column: 2/3;
+}
+.grid-item8 ul {
+             text-align: left;
+}
+
+.grid-item9 {
+             grid-column: 3/4;
+             align-self: end;
+             
+}
+
+
+/* pets page - elements aligned along the right side */
+
+div.grid-container_2 {
+    margin-right:20px;
+    margin-top: 80px;
+}
+
+.grid-container_2 {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ padding:10px;
+ gap: 30px 50px;
+
+}
+.grid-container_2 > div {
+text-align: center;
+padding: 20px 0;
+}
+
+.grid-item1_2 {
+    grid-column: 1/3;
+    background-color: #ebc8ba;      
+}
+
+.grid-item2_2 {
+     grid-column: 3/4;
+}
+.grid-item2_2 h2 {
+ text-align: right;
+}
+.grid-item3_2 {
+       align-self: end;
+}
+
+.grid-item4_2 {
+    grid-column: 2/4;
+    background-color: #ebc8ba;
+}
+
+.grid-item4_2 p {
+              text-align: right;
+              margin: 10px 40px 10px 40px;
+
+}
+.grid-item4_2 {
+align-self: end;
+}
+.grid-item5_2, .grid-item6_2, .grid-item7_2 {
+background-color: #ebc8ba;
+}
+
+.grid-item8_2 {
+    grid-column: 1/2;
+    }
+.grid-item9_2 {
+grid-column: 2/3;
+}
+.grid-item9_2 ul {
+text-align: right;
+}
+
+
+/* below is the grid style for recipes page */
+
+div.grid-con {
+    margin-left:20px;
+    margin-top: 80px;
+}
+
+.grid-con {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 100px 200x 200px 200px;
+ padding:10px;
+ gap:20px 40px;
+}
+.grid-con > div {
+padding: 20px 0;
+}
+
+.grid-it_2 {
+     grid-row: 1/3;
+     border-top: solid 5px #e45432;
+}
+.grid-it_4, .grid-it_5 {
+    border-bottom: solid 5px #e45432;
+}
+
+
+/* below is the tablet view*/
+
+@media screen and (min-width: 768px) {
+.intro  {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.intro_grid {
+    grid-column: 2/3;
+}
+div.grid-container_1 {
+    margin-left:30%;
+}
+div.grid-container_2 {
+    margin-right:30%;
+}
+div.grid-container {
+    margin-left:30%
+}
+
+}
+
+
